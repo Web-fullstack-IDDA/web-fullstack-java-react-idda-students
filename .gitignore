@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Java compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs
+*.log
