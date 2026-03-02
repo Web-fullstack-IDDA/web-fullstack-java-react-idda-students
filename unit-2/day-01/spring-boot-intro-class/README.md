@@ -8,7 +8,7 @@ This is the starting point of the IronBoard app. A minimal Spring Boot project w
 |------|-------------|
 | `IronboardApplication.java` | `@SpringBootApplication` entry point |
 | `controller/ProjectController.java` | `@RestController` with `@GetMapping` returning `List<String>` |
-| `application.properties` | App name + port config |
+| `application.properties` |  |
 
 ## Key concepts
 
