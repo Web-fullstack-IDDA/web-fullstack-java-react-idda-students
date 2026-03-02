@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Spring Boot parent POM provides dependency management and plugin defaults -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.0.2</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.ironhack</groupId>
+    <artifactId>ironboard</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>IronBoard</name>
+    <description>IronBoard - Step 01: Hello Spring Boot</description>
+
+    <!-- This is the url of the project website -->
+    <url/>
+    <!-- This is the license for the project -->
+	<licenses>
+		<license/>
+	</licenses>
+    <!-- This is the developers of the project -->
+	<developers>
+		<developer/>
+	</developers>
+    <!-- This is the source control management system of the project -->
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Spring Boot Web MVC: provides @RestController, @GetMapping, embedded servlet support (e.g. Tomcat) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webmvc</artifactId>
+        </dependency>
+
+        <!-- Spring Boot Web MVC Test: provides @WebMvcTest, MockMvc autoconfiguration -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Spring Boot Maven plugin: enables 'mvn spring-boot:run' -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
