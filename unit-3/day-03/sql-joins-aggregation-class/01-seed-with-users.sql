@@ -23,11 +23,6 @@
 CREATE DATABASE IF NOT EXISTS ironboard;
 USE ironboard;
 
--- Drop in reverse order (children before parents)
-DROP TABLE IF EXISTS tasks;
-DROP TABLE IF EXISTS projects;
-DROP TABLE IF EXISTS users;
-
 
 -- ---------------------------------------------------------
 -- Create the full schema (users -> projects -> tasks)
