@@ -32,9 +32,6 @@ DROP TABLE IF EXISTS users;
 -- ---------------------------------------------------------
 -- Create the full schema (users -> projects -> tasks)
 -- ---------------------------------------------------------
--- TIP: This is the same schema JPA will auto-generate on Day 4.
--- Writing it by hand ensures you understand every column and
--- constraint before letting JPA do it automatically.
 
 CREATE TABLE users (
     id         INT AUTO_INCREMENT PRIMARY KEY,
@@ -100,12 +97,3 @@ INSERT INTO tasks (title, description, status, priority, due_date, project_id, a
     ('Design course structure', 'Plan units, lessons, and labs',       'DONE',        'HIGH',   '2026-01-10', 2, NULL),
     ('Build student portal',    'Create React frontend for students',  'IN_PROGRESS', 'HIGH',   '2026-02-15', 2, NULL),
     ('Create product catalog',  'Build product CRUD with search',      'TODO',        'HIGH',   '2026-03-01', 3, NULL);
-
-
--- ---------------------------------------------------------
--- Verify: quick summary
--- ---------------------------------------------------------
-SELECT 'users' AS tbl, COUNT(*) AS rows FROM users
-UNION ALL SELECT 'projects', COUNT(*) FROM projects
-UNION ALL SELECT 'tasks', COUNT(*) FROM tasks;
--- Expected: users=4, projects=3, tasks=8
